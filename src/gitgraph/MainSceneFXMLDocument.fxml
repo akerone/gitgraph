@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?scenebuilder-background-color 0xbfbfbfff?>
+<?scenebuilder-stylesheet mainscenefxmldocument.fxml.css?>
+
+<BorderPane fx:id="mainPane" prefHeight="480.0" prefWidth="640.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="gitgraph.MainSceneFXMLDocumentController">
+  <center>
+    <BorderPane prefHeight="-1.0" prefWidth="-1.0">
+      <center>
+        <TabPane fx:id="tabPane" disable="false" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" rotateGraphic="false" side="BOTTOM" tabClosingPolicy="ALL_TABS" tabMaxHeight="18.0" tabMinHeight="18.0" tabMinWidth="40.0" visible="true" />
+      </center>
+      <top>
+        <ToolBar>
+          <items>
+            <Button mnemonicParsing="false" text="Button" />
+          </items>
+        </ToolBar>
+      </top>
+    </BorderPane>
+  </center>
+  <top>
+    <MenuBar id="mainMenuBar">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#newFileMenuItemAction" text="New...." />
+            <MenuItem mnemonicParsing="false" onAction="#closeFileMenuItemAction" text="Close" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Delete" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+  </top>
+</BorderPane>
